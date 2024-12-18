@@ -1,0 +1,18 @@
+{
+  "props": {
+    "version": "123",
+    "singleton": true
+  },
+  "components": {
+    "systemTray": {
+      "type": "script\\SystemTrayScript",
+      "x": 192,
+      "y": 64,
+      "props": {
+        "visible": "1",
+        "icon": ".data/img/gradient_1000_800.png",
+        "manualExit": true
+      }
+    }
+  }
+}
