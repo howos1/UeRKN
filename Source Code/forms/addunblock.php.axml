@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<root>
+  <class name="MainForm">
+    
+  
+  
+  
+  
+  
+  
+  
+  
+  <method name="doButtonClickLeft">
+      <exec command="service_install.bat" command-type="string" wait="" wait-type=""/>
+      <elementShow object="label3" object-type="object"/>
+    </method>
+  
+  
+  
+  
+  
+  
+  
+  <method name="doLabel4ClickLeft">
+      <fadeOut continue="" continue-type="" duration="1000" duration-type="integer" object="~senderForm" object-type="object"/>
+      <sleep sync="1" sync-type="" value="1000" value-type="integer"/>
+      <hideForm form="~sender" form-type="form"/>
+    </method>
+  </class>
+<class name="addunblock">
+    
+  
+  
+  <method name="doGobackButtonClickL">
+      <loadForm form="MainForm" form-type="form" savePosition="1" savePosition-type="" saveSize="1" saveSize-type=""/>
+    </method>
+  
+  <method name="doCloseButtonClickL">
+      <fadeOut continue="" continue-type="" duration="1000" duration-type="integer" object="~senderForm" object-type="object"/>
+      <sleep sync="1" sync-type="" value="1000" value-type="integer"/>
+      <hideForm form="~sender" form-type="form"/>
+    </method>
+  <method name="doButton2ClickL">
+      <exec command="customSite.exe" command-type="string" wait="" wait-type=""/>
+    </method>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <method name="doAddsiteButtonClickL">
+      <toast value="После добавление запустите разблокировку" value-type="string"/>
+      <sleep sync="" sync-type="" value="1000" value-type="integer"/>
+      <exec command="customSite.exe" command-type="string" wait="" wait-type=""/>
+    </method>
+  
+  
+  
+  <method name="doCloseButtonClickLeft">
+      <fadeOut continue="" continue-type="" duration="500" duration-type="integer" object="~senderForm" object-type="object"/>
+      <hideForm form="~sender" form-type="form"/>
+    </method>
+  
+  
+  
+  
+  
+  
+  <method name="doAddsiteButtonClickLeft">
+      <elementSetText object="file" object-type="object" relative="1" relative-type="" value="add" value-type="object"/>
+      <elementSetText object="file" object-type="object" relative="1" relative-type="" value="texter" value-type="object"/>
+      <exec command="service_install.bat" command-type="string" wait="" wait-type=""/>
+      <sleep sync="" sync-type="" value="3000" value-type="integer"/>
+      <toast value="Домен Добавлен!" value-type="string"/>
+    </method>
+  
+  
+  <method name="doGobackButtonClickLeft">
+      <loadForm form="MainForm" form-type="form" savePosition="1" savePosition-type="" saveSize="1" saveSize-type=""/>
+    </method>
+  
+  
+  </class>
+</root>

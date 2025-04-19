@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?import javafx.scene.*?><?import javafx.collections.*?><?import javafx.scene.layout.*?><?import javafx.scene.control.*?><?import javafx.scene.text.*?><?import javafx.scene.image.*?><?import javafx.scene.shape.*?><?import javafx.scene.paint.*?><?import javafx.scene.web.*?><?import javafx.geometry.*?><?import java.lang.*?><?import org.develnext.jphp.ext.javafx.classes.data.*?><?import org.develnext.jphp.ext.javafx.support.*?><?import org.develnext.jphp.ext.javafx.support.control.*?><?import org.develnext.jphp.ext.game.support.*?><AnchorPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" AnchorPane.bottomAnchor="0" AnchorPane.leftAnchor="0" AnchorPane.rightAnchor="0" AnchorPane.topAnchor="0" focusTraversable="false" id="" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="480" prefWidth="640" styleClass="">
+  <children>
+    <Rectangle arcHeight="30" arcWidth="30" fill="#1a1a1a" focusTraversable="false" height="480" id="rect" layoutX="0" layoutY="0" stroke="#4d804d" strokeType="INSIDE" strokeWidth="2" styleClass="" width="640"/>
+    <Rectangle arcHeight="20" arcWidth="20" fill="#333333" focusTraversable="false" height="208" id="rect4" layoutX="36" layoutY="144" stroke="#333333" strokeType="INSIDE" strokeWidth="2" styleClass="" width="568"/>
+    <Data cursor="DEFAULT" enabled="1" id="data-rect" visible="1"/>
+    <Rectangle arcHeight="0" arcWidth="0" fill="#cce6ff00" focusTraversable="false" height="24" id="rectAlt" layoutX="8" layoutY="0" stroke="#334db300" strokeType="INSIDE" strokeWidth="2" styleClass="" width="624"/>
+    <Data cursor="DEFAULT" enabled="1" id="data-rectAlt" visible="1"/>
+    <Separator focusTraversable="false" id="separator" layoutX="8" layoutY="24" opacity="0.6219512195122" orientation="HORIZONTAL" prefHeight="8" prefWidth="624" styleClass="separator "/>
+    <Data cursor="DEFAULT" enabled="1" id="data-separator" visible="1"/>
+    <LabelEx alignment="CENTER_LEFT" autoSize="false" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="logo" layoutX="256" layoutY="32" prefHeight="64" prefWidth="128" styleClass="label " text="UeRKN" textAlignment="LEFT" textFill="#80b380" underline="false" wrapText="false">
+      <font>
+        <Font name="System Bold" size="36"/>
+      </font>
+    </LabelEx>
+    <Data cursor="DEFAULT" enabled="1" id="data-logo" visible="1"/>
+    <LabelEx alignment="CENTER_LEFT" autoSize="false" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="versionLabel" layoutX="608" layoutY="456" prefHeight="16" prefWidth="96" styleClass="label " text="v1.0" textAlignment="LEFT" textFill="#ffffff" underline="false" wrapText="false">
+      <font>
+        <Font name="System Regular" size="12"/>
+      </font>
+    </LabelEx>
+    <Data cursor="DEFAULT" enabled="1" id="data-versionLabel" visible="1"/>
+    <FlatButton alignment="CENTER" borderRadius="5" color="#1a4d1a" contentDisplay="LEFT" ellipsisString="..." focusTraversable="true" graphicTextGap="4" hoverColor="#669966" id="unblockButton" layoutX="248" layoutY="432" prefHeight="32" prefWidth="144" styleClass="x-flat-button " text="Разблокировать" textAlignment="CENTER" textFill="#ffffff" underline="false" wrapText="false">
+      <font>
+        <Font name="System Bold" size="17"/>
+      </font>
+    </FlatButton>
+    <Data cursor="HAND" enabled="1" id="data-unblockButton" visible="1"/>
+    <LabelEx alignment="CENTER_LEFT" autoSize="false" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="label3" layoutX="240" layoutY="392" prefHeight="30" prefWidth="168" styleClass="label " text="ВЫ СВОБОДНЫ!" textAlignment="LEFT" textFill="#ffffff" underline="false" wrapText="false">
+      <font>
+        <Font name="System Bold" size="20"/>
+      </font>
+    </LabelEx>
+    <Data cursor="DEFAULT" enabled="1" id="data-label3" visible=""/>
+    <LabelEx alignment="CENTER_LEFT" autoSize="false" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="closeButton" layoutX="608" layoutY="0" prefHeight="16" prefWidth="96" styleClass="label " text="X" textAlignment="LEFT" textFill="#ffffff" underline="false" wrapText="false">
+      <font>
+        <Font name="System Bold" size="20"/>
+      </font>
+    </LabelEx>
+    <Data cursor="DEFAULT" enabled="1" id="data-closeButton" visible="1"/>
+    <LabelEx alignment="CENTER_LEFT" autoSize="false" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="label5" layoutX="212" layoutY="80" prefHeight="17" prefWidth="216" styleClass="label " text="Программу не надо держать открытой" textAlignment="LEFT" textFill="#ffffff" underline="false" wrapText="false">
+      <font>
+        <Font name="System Regular" size="12"/>
+      </font>
+    </LabelEx>
+    <Data cursor="DEFAULT" enabled="1" id="data-label5" visible="1"/>
+    <LabelEx alignment="CENTER_LEFT" autoSize="false" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="label6" layoutX="288" layoutY="96" prefHeight="32" prefWidth="64" styleClass="label " text="Material UI&#10;Баг Фиксы" textAlignment="LEFT" textFill="#ffffff" underline="false" wrapText="false">
+      <font>
+        <Font name="System Bold" size="12"/>
+      </font>
+    </LabelEx>
+    <Data cursor="DEFAULT" enabled="1" id="data-label6" visible="1"/>
+    <Data cursor="DEFAULT" enabled="1" id="data-label7" visible="1"/>
+    <Data cursor="DEFAULT" enabled="1" id="data-label8" visible="1"/>
+    <Data cursor="DEFAULT" enabled="1" id="data-rect4" visible="1"/>
+    <LabelEx alignment="CENTER_LEFT" autoSize="false" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="label7" layoutX="200" layoutY="152" prefHeight="224" prefWidth="72" styleClass="label " text="YouTube&#10;Discord&#10;Steam&#10;7tv&#10;Meta&#10;Facebook&#10;Twitter" textAlignment="LEFT" textFill="#ffffff" underline="false" wrapText="false">
+      <font>
+        <Font name="System Bold" size="16"/>
+      </font>
+    </LabelEx>
+    <LabelEx alignment="CENTER_LEFT" autoSize="false" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="label8" layoutX="192" layoutY="144" prefHeight="32" prefWidth="256" styleClass="label " text="Будет Разблокировано" textAlignment="LEFT" textFill="#ffffff" underline="false" wrapText="false">
+      <font>
+        <Font name="System Bold" size="22"/>
+      </font>
+    </LabelEx>
+    <LabelEx alignment="CENTER_LEFT" autoSize="false" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="addunblockButton" layoutX="577" layoutY="232" prefHeight="16" prefWidth="16" styleClass="label " text="+" textAlignment="LEFT" textFill="#ffffff" underline="false" wrapText="false">
+      <font>
+        <Font name="System Bold" size="21"/>
+      </font>
+    </LabelEx>
+    <Data cursor="DEFAULT" enabled="1" id="data-addunblockButton" tooltipText="Добавить свой сайт" visible="1"/>
+    <FlatButton alignment="CENTER" borderRadius="4" color="#4d4d4d" contentDisplay="LEFT" ellipsisString="..." focusTraversable="true" graphicTextGap="4" hoverColor="#666666" id="deleteButton" layoutX="400" layoutY="440" prefHeight="24" prefWidth="104" styleClass="x-flat-button " text="Удалить" textAlignment="CENTER" textFill="#ffffff" underline="false" wrapText="false">
+      <font>
+        <Font name="System Regular" size="12"/>
+      </font>
+    </FlatButton>
+    <Data cursor="HAND" enabled="1" id="data-deleteButton" visible="1"/>
+    <LabelEx alignment="CENTER_LEFT" autoSize="false" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="label10" layoutX="280" layoutY="176" prefHeight="168" prefWidth="96" styleClass="label " text="Wikipedia&#10;Envato&#10;RuTracker&#10;Patreon&#10;SoundCloud&#10;SpeedTest&#10;Metacritic" textAlignment="LEFT" textFill="#ffffff" underline="false" wrapText="false">
+      <font>
+        <Font name="System Bold" size="16"/>
+      </font>
+    </LabelEx>
+    <Data cursor="DEFAULT" enabled="1" id="data-label10" visible="1"/>
+    <Data cursor="DEFAULT" enabled="1" id="data-label11" visible="1"/>
+    <LabelEx alignment="CENTER_LEFT" autoSize="false" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="label" layoutX="376" layoutY="144" prefHeight="168" prefWidth="112" styleClass="label " text="Viber&#10;Cloudflare&#10;SponsorBlock&#10;JutSu" textAlignment="LEFT" textFill="#ffffff" underline="false" wrapText="false">
+      <font>
+        <Font name="System Bold" size="16"/>
+      </font>
+    </LabelEx>
+    <Data cursor="DEFAULT" enabled="1" id="data-label" visible="1"/>
+    <LabelEx alignment="CENTER_LEFT" autoSize="false" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="labelAlt" layoutX="405" layoutY="261" prefHeight="16" prefWidth="96" rotate="17.560975609756" styleClass="label " text="NEW" textAlignment="LEFT" textFill="#e6e64d" underline="false" wrapText="false">
+      <font>
+        <Font name="System Regular" size="12"/>
+      </font>
+    </LabelEx>
+    <Data cursor="DEFAULT" enabled="1" id="data-labelAlt" visible="1"/>
+    <com.jfoenix.controls.JFXCheckBox alignment="CENTER_LEFT" checkedColor="#0f9d58" contentDisplay="LEFT" ellipsisString="..." focusTraversable="true" graphicTextGap="4" id="checkboxAlt" layoutX="576" layoutY="320" prefHeight="24" prefWidth="24" selected="true" styleClass="check-box jfx-check-box " text="" textAlignment="LEFT" unCheckedColor="#4d4d4d" underline="false" wrapText="false">
+      <font>
+        <Font name="System Regular" size="12"/>
+      </font>
+    </com.jfoenix.controls.JFXCheckBox>
+    <Data cursor="DEFAULT" enabled="1" id="data-checkboxAlt" visible="1"/>
+    <LabelEx alignment="CENTER_LEFT" autoSize="false" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="label11" layoutX="463" layoutY="233" prefHeight="16" prefWidth="96" rotate="17.560975609756" styleClass="label " text="NEW" textAlignment="LEFT" textFill="#e6e64d" underline="false" wrapText="false">
+      <font>
+        <Font name="System Regular" size="12"/>
+      </font>
+    </LabelEx>
+  </children>
+</AnchorPane>
