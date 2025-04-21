@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<root>
+  <class name="MainForm">
+    
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <method name="doCloseButtonClickL">
+      <fadeOut continue="" continue-type="" duration="1000" duration-type="integer" object="~senderForm" object-type="object"/>
+      <sleep sync="1" sync-type="" value="1000" value-type="integer"/>
+      <hideForm form="~sender" form-type="form"/>
+    </method>
+  <method name="doAddunblockButtonClickL">
+      <loadForm form="addunblock" form-type="form" savePosition="1" savePosition-type="" saveSize="1" saveSize-type=""/>
+    </method>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <method name="doUnblockButtonClickL">
+      <exec command="service_install.bat" command-type="string" wait="" wait-type=""/>
+      <elementShow object="label3" object-type="object"/>
+    </method>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <method name="doDeleteButtonClickL">
+      <exec command="service_remove.bat" command-type="string" wait="" wait-type=""/>
+    </method>
+  
+  
+  
+  
+  
+  
+  
+  
+  <method name="doUnblockButtonClickLeft">
+      <elementShow object="label3" object-type="object"/>
+      <exec command="service_install.bat" command-type="string" wait="" wait-type=""/>
+    </method>
+  <method name="doDeleteButtonClickLeft">
+      <exec command="service_remove.bat" command-type="string" wait="" wait-type=""/>
+    </method>
+  <method name="doAddunblockButtonClickLeft">
+      <loadForm form="addunblock" form-type="form" savePosition="1" savePosition-type="" saveSize="1" saveSize-type=""/>
+    </method>
+  
+  
+  
+  
+  
+  <method name="doConstruct">
+      <fadeOut continue="" continue-type="" duration="0" duration-type="integer" object="~senderForm" object-type="object"/>
+      <fadeIn continue="" continue-type="" duration="500" duration-type="integer" object="~senderForm" object-type="object"/>
+    </method>
+  
+  <method name="doCheckboxAltClickLeft">
+      <elementEnabledSwitch object="unblockButton" object-type="object"/>
+    </method>
+  <method name="doCloseButtonClickLeft">
+      <fadeOut continue="" continue-type="" duration="500" duration-type="integer" object="~senderForm" object-type="object"/>
+      <hideForm form="~sender" form-type="form"/>
+    </method>
+  
+  
+  </class>
+<class name="settings">
+    
+  <method name="doButton2Act">
+      <loadForm form="MainForm" form-type="form" savePosition="" savePosition-type="" saveSize="" saveSize-type=""/>
+    </method>
+  
+  
+  
+  
+  <method name="doCheckboxAltClickLeft">
+      <ifText method="equals" method-type="" not="" not-type="" object="updatefile" object-type="object" string="update=on" string-type="string"/>
+      <openBlock/>
+      <elementSetText object="updatefile" object-type="object" relative="" relative-type="" value="update=off" value-type="string"/>
+      <toast value="Выключено" value-type="string"/>
+      <exit/>
+      <closeBlock/>
+      <ifText method="equals" method-type="" not="" not-type="" object="updatefile" object-type="object" string="update=off" string-type="string"/>
+      <openBlock/>
+      <elementSetText object="updatefile" object-type="object" relative="" relative-type="" value="update=on" value-type="string"/>
+      <toast value="Включено" value-type="string"/>
+      <exit/>
+      <closeBlock/>
+    </method>
+  
+  
+  
+  
+    <method name="doCheckboxONClickL">
+      <ifText method="equals" method-type="" not="" not-type="" object="updatefile" object-type="object" string="update=on" string-type="string"/>
+      <openBlock/>
+      <elementSetText object="updatefile" object-type="object" relative="" relative-type="" value="update=off" value-type="string"/>
+      <toast value="Выключено" value-type="string"/>
+      <exit/>
+      <closeBlock/>
+      <ifText method="equals" method-type="" not="" not-type="" object="updatefile" object-type="object" string="update=off" string-type="string"/>
+      <openBlock/>
+      <elementSetText object="updatefile" object-type="object" relative="" relative-type="" value="update=on" value-type="string"/>
+      <toast value="Включено" value-type="string"/>
+      <exit/>
+      <closeBlock/>
+    </method>
+  
+  <method name="doConstruct">
+      <ifText method="equals" method-type="" not="" not-type="" object="updatefile" object-type="object" string="update=off" string-type="string"/>
+      <openBlock/>
+      <elementHide object="checkboxAlt" object-type="object"/>
+      <elementShow object="checkboxON" object-type="object"/>
+      <closeBlock/>
+    </method>
+  <method name="doCloseButtonClickLeft">
+      <hideForm form="~sender" form-type="form"/>
+    </method>
+  <method name="doCheckboxONClickLeft">
+      <ifText method="equals" method-type="" not="" not-type="" object="updatefile" object-type="object" string="update=on" string-type="string"/>
+      <openBlock/>
+      <elementSetText object="updatefile" object-type="object" relative="" relative-type="" value="update=off" value-type="string"/>
+      <exit/>
+      <closeBlock/>
+      <ifText method="equals" method-type="" not="" not-type="" object="updatefile" object-type="object" string="update=off" string-type="string"/>
+      <openBlock/>
+      <elementSetText object="updatefile" object-type="object" relative="" relative-type="" value="update=on" value-type="string"/>
+      <exit/>
+      <closeBlock/>
+    </method>
+  <method name="doBackClickLeft">
+      <loadForm form="MainForm" form-type="form" savePosition="1" savePosition-type="" saveSize="1" saveSize-type=""/>
+    </method>
+  <method name="doVersionLabelClickLeft">
+      <showForm form="error" form-type="form"/>
+    </method>
+  <method name="doAboutClickLeft">
+      <showForm form="error" form-type="form"/>
+    </method>
+  
+  <method name="doAboutMouseEnter">
+      <behaviourEnable behaviour="behaviour\custom\CursorBindBehaviour" behaviour-type="string" object="aboutcursor" object-type="object"/>
+    <elementShow object="aboutcursor" object-type="object"/>
+    </method>
+  <method name="doAboutMouseExit">
+      <behaviourDisable behaviour="behaviour\custom\CursorBindBehaviour" behaviour-type="string" object="aboutcursor" object-type="object"/>
+    <elementHide object="aboutcursor" object-type="object"/>
+    </method>
+  
+  
+  <method name="doLogoMouseDown2x">
+      <showForm form="secret" form-type="form"/>
+    </method>
+  </class>
+</root>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<root>
+  <class name="error">
+    
+  
+  
+  <method name="doLabel3ClickLeft">
+      <showForm form="browser" form-type="form"/>
+    </method>
+  <method name="doLabel4ClickLeft">
+      <showForm form="browser" form-type="form"/>
+    </method>
+  </class>
+</root>
