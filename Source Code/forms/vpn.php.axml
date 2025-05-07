@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<root>
+  <class name="MainForm">
+    
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <method name="doCloseButtonClickL">
+      <fadeOut continue="" continue-type="" duration="1000" duration-type="integer" object="~senderForm" object-type="object"/>
+      <sleep sync="1" sync-type="" value="1000" value-type="integer"/>
+      <hideForm form="~sender" form-type="form"/>
+    </method>
+  <method name="doAddunblockButtonClickL">
+      <loadForm form="addunblock" form-type="form" savePosition="1" savePosition-type="" saveSize="1" saveSize-type=""/>
+    </method>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <method name="doUnblockButtonClickL">
+      <exec command="service_install.bat" command-type="string" wait="" wait-type=""/>
+      <elementShow object="label3" object-type="object"/>
+    </method>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <method name="doDeleteButtonClickL">
+      <exec command="service_remove.bat" command-type="string" wait="" wait-type=""/>
+    </method>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <method name="doDeleteButtonClickLeft">
+      <exec command="service_remove.bat" command-type="string" wait="" wait-type=""/>
+    </method>
+  <method name="doAddunblockButtonClickLeft">
+      <loadForm form="addunblock" form-type="form" savePosition="1" savePosition-type="" saveSize="1" saveSize-type=""/>
+    </method>
+  
+  
+  
+  
+  
+  <method name="doConstruct">
+      <fadeOut continue="" continue-type="" duration="0" duration-type="integer" object="~senderForm" object-type="object"/>
+      <fadeIn continue="" continue-type="" duration="500" duration-type="integer" object="~senderForm" object-type="object"/>
+    </method>
+  
+  <method name="doCheckboxAltClickLeft">
+      <elementEnabledSwitch object="unblockButton" object-type="object"/>
+    </method>
+  <method name="doCloseButtonClickLeft">
+      <fadeOut continue="" continue-type="" duration="500" duration-type="integer" object="~senderForm" object-type="object"/>
+      <hideForm form="~sender" form-type="form"/>
+    </method>
+  
+  
+  
+  <method name="doSettingsClickLeft">
+      <loadForm form="settings" form-type="form" savePosition="1" savePosition-type="" saveSize="1" saveSize-type=""/>
+    </method>
+  
+  
+  
+  
+  
+  
+  <method name="doUnblockButtonClickLeft">
+      <ifFileExists file="service_install.bat" file-type="string" not="1" not-type=""/>
+      <openBlock/>
+      <elementShow object="errortext" object-type="object"/>
+      <fadeTo continue="" continue-type="" duration="1" duration-type="integer" object="errortext" object-type="object" value="1" value-type="float"/>
+      <closeBlock/>
+      <ifFileExists file="ueRKN.bat" file-type="string" not="1" not-type=""/>
+      <openBlock/>
+      <elementShow object="errortext" object-type="object"/>
+      <fadeTo continue="" continue-type="" duration="1" duration-type="integer" object="errortext" object-type="object" value="1" value-type="float"/>
+      <closeBlock/>
+      <ifFileExists file="list-general.txt" file-type="string" not="1" not-type=""/>
+      <openBlock/>
+      <elementShow object="errortext" object-type="object"/>
+      <fadeTo continue="" continue-type="" duration="1" duration-type="integer" object="errortext" object-type="object" value="1" value-type="float"/>
+      <closeBlock/>
+      <ifFileExists file="service_install.bat" file-type="string" not="" not-type=""/>
+      <openBlock/>
+      <elementShow object="label3" object-type="object"/>
+      <exec command="service_install.bat" command-type="string" wait="" wait-type=""/>
+      <closeBlock/>
+    </method>
+  <method name="doVersionLabelClickLeft">
+      <showForm form="error" form-type="form"/>
+    </method>
+  </class>
+<class name="vpn">
+    <method name="doCloseButtonClickLeft">
+      <hideForm form="~sender" form-type="form"/>
+    </method>
+  <method name="doSettingsClickLeft">
+      <loadForm form="settings" form-type="form" savePosition="1" savePosition-type="" saveSize="1" saveSize-type=""/>
+    </method>
+  
+  <method name="doConnectButtonClickL">
+      <elementShow object="progressIndicator" object-type="object"/>
+      <sleep sync="" sync-type="" value="4000" value-type="integer"/>
+    <elementSetText object="labelStatus" object-type="object" relative="" relative-type="" value="подключено" value-type="string"/>
+    </method>
+  
+  
+  <method name="doCheckboxClickLeft">
+      <elementEnabledOn object="connectButton" object-type="object"/>
+    </method>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+    
+    
+  <method name="doCheckboxAltClickLeft">
+      <elementShow object="image" object-type="object"/>
+    </method>
+  
+  
+  <method name="doConnectButtonClickLeft">
+      <ifText method="equals" method-type="" not="" not-type="" object="labelStatus" object-type="object" string="подключено" string-type="string"/>
+      <openBlock/>
+      <elementShow object="progressIndicator" object-type="object"/>
+      <elementEnabledOff object="~sender" object-type="object"/>
+      <sleep sync="" sync-type="" value="1000" value-type="integer"/>
+      <elementSetText object="labelStatus" object-type="object" relative="" relative-type="" value="не подключено" value-type="string"/>
+      <elementHide object="progressIndicator" object-type="object"/>
+      <elementEnabledOn object="~sender" object-type="object"/>
+      <exit/>
+      <closeBlock/>
+      <ifText method="equals" method-type="" not="" not-type="" object="labelStatus" object-type="object" string="не подключено" string-type="string"/>
+      <openBlock/>
+      <elementShow object="progressIndicator" object-type="object"/>
+      <elementEnabledOff object="~sender" object-type="object"/>
+      <sleep sync="" sync-type="" value="4000" value-type="integer"/>
+      <elementSetText object="labelStatus" object-type="object" relative="" relative-type="" value="подключено" value-type="string"/>
+      <elementHide object="progressIndicator" object-type="object"/>
+      <elementEnabledOn object="~sender" object-type="object"/>
+      <exit/>
+      <closeBlock/>
+    </method>
+  <method name="doConstruct">
+      <ifText method="equals" method-type="" not="" not-type="" object="labelStatus" object-type="object" string="подключено" string-type="string"/>
+      <openBlock/>
+      <elementSetX object="connectStatusON" object-type="object" relative="" relative-type="" value="408" value-type="integer"/>
+      <elementSetY object="connectStatusON" object-type="object" relative="" relative-type="" value="152" value-type="integer"/>
+      <elementSetX object="connectStatus" object-type="object" relative="" relative-type="" value="648" value-type="integer"/>
+      <closeBlock/>
+      <ifText method="equals" method-type="" not="" not-type="" object="labelStatus" object-type="object" string="не подключено" string-type="string"/>
+      <openBlock/>
+      <elementSetX object="connectStatusON" object-type="object" relative="" relative-type="" value="648" value-type="integer"/>
+      <elementSetX object="connectStatus" object-type="object" relative="" relative-type="" value="408" value-type="integer"/>
+      <elementSetY object="connectStatus" object-type="object" relative="" relative-type="" value="152" value-type="integer"/>
+      <closeBlock/>
+    </method>
+  
+  <method name="doConnectStatusONStep">
+      <ifText method="equals" method-type="" not="" not-type="" object="labelStatus" object-type="object" string="подключено" string-type="string"/>
+      <openBlock/>
+      <elementSetX object="connectStatusON" object-type="object" relative="" relative-type="" value="408" value-type="integer"/>
+      <elementSetY object="connectStatusON" object-type="object" relative="" relative-type="" value="152" value-type="integer"/>
+      <elementSetX object="connectStatus" object-type="object" relative="" relative-type="" value="648" value-type="integer"/>
+      <closeBlock/>
+      <ifText method="equals" method-type="" not="" not-type="" object="labelStatus" object-type="object" string="не подключено" string-type="string"/>
+      <openBlock/>
+      <elementSetX object="connectStatusON" object-type="object" relative="" relative-type="" value="648" value-type="integer"/>
+      <elementSetX object="connectStatus" object-type="object" relative="" relative-type="" value="408" value-type="integer"/>
+      <elementSetY object="connectStatus" object-type="object" relative="" relative-type="" value="152" value-type="integer"/>
+      <closeBlock/>
+    </method>
+  <method name="doLabel3ClickLeft">
+      <toast value="нет доступных локаций" value-type="string"/>
+    </method>
+  </class>
+</root>
