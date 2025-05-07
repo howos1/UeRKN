@@ -4,11 +4,13 @@
     
   
   
-  <method name="doLabel3ClickLeft">
-      <showForm form="browser" form-type="form"/>
-    </method>
+  
+  
   <method name="doLabel4ClickLeft">
-      <showForm form="browser" form-type="form"/>
+      <browse url="https://www.grfruit.ru" url-type="string"/>
+    </method>
+  <method name="doLabel3ClickLeft">
+      <browse url="https://www.grfruit.ru" url-type="string"/>
     </method>
   </class>
 </root>

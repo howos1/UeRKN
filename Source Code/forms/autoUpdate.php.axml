@@ -11,9 +11,8 @@
   
   
   
-  <method name="doLabelAltClickLeft">
-      <hideForm form="~sender" form-type="form"/>
-    </method>
+  
+  
   
   
   
@@ -81,6 +80,11 @@
       <ifText method="equals" method-type="" not="" not-type="" object="updatefile" object-type="object" string="update=on" string-type="string"/>
       <openBlock/>
       <elementLoadContent object="ver" object-type="object" path="https://github.com/howos1/UeRKN/releases/download/1.2/ver.txt" path-type="string" sync="" sync-type=""/>
+      <ifText method="equals" method-type="" not="" not-type="" object="ver" object-type="object" string="Not Found" string-type="string"/>
+      <openBlock/>
+      <elementSetText object="ver" object-type="object" relative="" relative-type="" value="uerkn1.1" value-type="string"/>
+      <loadForm form="MainForm" form-type="form" savePosition="" savePosition-type="" saveSize="" saveSize-type=""/>
+      <closeBlock/>
       <sleep sync="" sync-type="" value="3000" value-type="integer"/>
       <closeBlock/>
       <ifText method="equals" method-type="" not="" not-type="" object="ver" object-type="object" string="uerkn1.1" string-type="string"/>
@@ -102,6 +106,10 @@
       <exec command="ueRKN.exe" command-type="string" wait="" wait-type=""/>
       <applicationShutdown/>
       <closeBlock/>
+    </method>
+  <method name="doLabelAltClickLeft">
+      <exit/>
+      <applicationShutdown/>
     </method>
   </class>
 </root>

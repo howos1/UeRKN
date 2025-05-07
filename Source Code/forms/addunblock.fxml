@@ -13,7 +13,7 @@
       </font>
     </LabelEx>
     <Data cursor="DEFAULT" enabled="1" id="data-logo" visible="1"/>
-    <LabelEx alignment="CENTER_LEFT" autoSize="false" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="versionLabel" layoutX="608" layoutY="456" prefHeight="16" prefWidth="96" styleClass="label " text="v1.1" textAlignment="LEFT" textFill="#ffffff" underline="false" wrapText="false">
+    <LabelEx alignment="CENTER_LEFT" autoSize="false" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="versionLabel" layoutX="608" layoutY="456" prefHeight="16" prefWidth="96" styleClass="label " text="v1.2" textAlignment="LEFT" textFill="#ffffff" underline="false" wrapText="false">
       <font>
         <Font name="System Regular" size="12"/>
       </font>
@@ -25,12 +25,12 @@
       </font>
     </FlatButton>
     <Data cursor="HAND" enabled="1" id="data-addsiteButton" visible="1"/>
-    <LabelEx alignment="CENTER_LEFT" autoSize="false" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="closeButton" layoutX="608" layoutY="0" prefHeight="16" prefWidth="96" styleClass="label " text="X" textAlignment="LEFT" textFill="#ffffff" underline="false" wrapText="false">
+    <LabelEx alignment="CENTER_LEFT" autoSize="false" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="closeButtonOLD" layoutX="608" layoutY="0" prefHeight="16" prefWidth="96" styleClass="label " text="X" textAlignment="LEFT" textFill="#ffffff" underline="false" wrapText="false">
       <font>
         <Font name="System Bold" size="20"/>
       </font>
     </LabelEx>
-    <Data cursor="DEFAULT" enabled="1" id="data-closeButton" visible="1"/>
+    <Data cursor="DEFAULT" enabled="1" id="data-closeButtonOLD" visible=""/>
     <LabelEx alignment="CENTER_LEFT" autoSize="false" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="label5" layoutX="212" layoutY="80" prefHeight="17" prefWidth="216" styleClass="label " text="Программу не надо держать открытой" textAlignment="LEFT" textFill="#ffffff" underline="false" wrapText="false">
       <font>
         <Font name="System Regular" size="12"/>
@@ -38,7 +38,7 @@
     </LabelEx>
     <Data cursor="DEFAULT" enabled="1" id="data-label5" visible="1"/>
     <Data cursor="DEFAULT" enabled="1" id="data-label8" visible="1"/>
-    <Data cursor="DEFAULT" enabled="1" id="data-gobackButton" tooltipText="Вернутся Назад" visible="1"/>
+    <Data cursor="DEFAULT" enabled="1" id="data-gobackButton" tooltipText="Вернутся Назад" visible=""/>
     <Data cursor="DEFAULT" enabled="1" id="data-add" visible="1"/>
     <LabelEx alignment="CENTER_LEFT" autoSize="false" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="texter" layoutX="648" layoutY="0" prefHeight="16" prefWidth="96" styleClass="label " text="&#10;" textAlignment="LEFT" textFill="#000000" underline="false" wrapText="false">
       <font>
@@ -74,5 +74,9 @@
         <Font name="System Bold" size="18"/>
       </font>
     </LabelEx>
+    <Circle fill="#e64d4d" focusTraversable="false" id="closebutton" layoutX="24" layoutY="16" radius="8" stroke="#e64d4d" strokeType="INSIDE" strokeWidth="2" styleClass=""/>
+    <Data cursor="DEFAULT" enabled="1" id="data-closebutton" visible="1"/>
+    <Circle fill="#ffff4d" focusTraversable="false" id="goback" layoutX="48" layoutY="16" radius="8" stroke="#ffff4d" strokeType="INSIDE" strokeWidth="2" styleClass=""/>
+    <Data cursor="DEFAULT" enabled="1" id="data-goback" visible="1"/>
   </children>
 </AnchorPane>

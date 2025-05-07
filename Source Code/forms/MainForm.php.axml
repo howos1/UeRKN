@@ -71,9 +71,7 @@
   
   
   
-  <method name="doDeleteButtonClickLeft">
-      <exec command="service_remove.bat" command-type="string" wait="" wait-type=""/>
-    </method>
+  
   <method name="doAddunblockButtonClickLeft">
       <loadForm form="addunblock" form-type="form" savePosition="1" savePosition-type="" saveSize="1" saveSize-type=""/>
     </method>
@@ -82,22 +80,19 @@
   
   
   
-  <method name="doConstruct">
-      <fadeOut continue="" continue-type="" duration="0" duration-type="integer" object="~senderForm" object-type="object"/>
-      <fadeIn continue="" continue-type="" duration="500" duration-type="integer" object="~senderForm" object-type="object"/>
-    </method>
+  
   
   <method name="doCheckboxAltClickLeft">
       <elementEnabledSwitch object="unblockButton" object-type="object"/>
     </method>
-  <method name="doCloseButtonClickLeft">
+  <method name="doCloseButtonOLDClickL">
       <fadeOut continue="" continue-type="" duration="500" duration-type="integer" object="~senderForm" object-type="object"/>
       <hideForm form="~sender" form-type="form"/>
     </method>
   
   
   
-  <method name="doSettingsClickLeft">
+  <method name="doSettingsOLDClickL">
       <loadForm form="settings" form-type="form" savePosition="1" savePosition-type="" saveSize="1" saveSize-type=""/>
     </method>
   
@@ -130,6 +125,37 @@
     </method>
   <method name="doVersionLabelClickLeft">
       <showForm form="error" form-type="form"/>
+    </method>
+  
+  <method name="doKeyDownShiftN">
+      <loadForm form="vpn" form-type="form" savePosition="" savePosition-type="" saveSize="" saveSize-type=""/>
+    </method>
+  
+  <method name="doSettingsClickLeft">
+      <loadForm form="settings" form-type="form" savePosition="1" savePosition-type="" saveSize="1" saveSize-type=""/>
+    </method>
+  <method name="doClosebuttonClickLeft">
+      <fadeTo continue="" continue-type="" duration="100" duration-type="integer" object="~senderForm" object-type="object" value="0" value-type="float"/>
+      <applicationShutdown/>
+    </method>
+  <method name="doConstruct">
+      <fadeOut continue="" continue-type="" duration="0" duration-type="integer" object="~senderForm" object-type="object"/>
+      <fadeIn continue="" continue-type="" duration="100" duration-type="integer" object="~senderForm" object-type="object"/>
+    </method>
+  
+  
+  
+  
+  <method name="doAddunblockButtonMouseEnter">
+      <behaviourEnable behaviour="behaviour\custom\CursorBindBehaviour" behaviour-type="string" object="aboutcursor" object-type="object"/>
+      <elementShow object="aboutcursor" object-type="object"/>
+    </method>
+  <method name="doAddunblockButtonMouseExit">
+      <behaviourDisable behaviour="behaviour\custom\CursorBindBehaviour" behaviour-type="string" object="aboutcursor" object-type="object"/>
+      <elementHide object="aboutcursor" object-type="object"/>
+    </method>
+  <method name="doDeleteButtonClickLeft">
+      <loadForm form="addunblock" form-type="form" savePosition="1" savePosition-type="" saveSize="1" saveSize-type=""/>
     </method>
   </class>
 </root>

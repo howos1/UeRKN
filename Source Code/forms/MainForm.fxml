@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <?import javafx.scene.*?><?import javafx.collections.*?><?import javafx.scene.layout.*?><?import javafx.scene.control.*?><?import javafx.scene.text.*?><?import javafx.scene.image.*?><?import javafx.scene.shape.*?><?import javafx.scene.paint.*?><?import javafx.scene.web.*?><?import javafx.geometry.*?><?import java.lang.*?><?import org.develnext.jphp.ext.javafx.classes.data.*?><?import org.develnext.jphp.ext.javafx.support.*?><?import org.develnext.jphp.ext.javafx.support.control.*?><?import org.develnext.jphp.ext.game.support.*?><AnchorPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" AnchorPane.bottomAnchor="0" AnchorPane.leftAnchor="0" AnchorPane.rightAnchor="0" AnchorPane.topAnchor="0" focusTraversable="false" id="" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="480" prefWidth="640" styleClass="">
   <children>
+    <Rectangle arcHeight="0" arcWidth="0" fill="#000000" focusTraversable="false" height="48" id="rect3" layoutX="648" layoutY="-8" stroke="#000000" strokeType="INSIDE" strokeWidth="2" styleClass="" width="136"/>
     <Rectangle arcHeight="30" arcWidth="30" fill="#1a1a1a" focusTraversable="false" height="480" id="rect" layoutX="0" layoutY="0" stroke="#4d804d" strokeType="INSIDE" strokeWidth="2" styleClass="" width="640"/>
     <Rectangle arcHeight="20" arcWidth="20" fill="#333333" focusTraversable="false" height="208" id="rect4" layoutX="36" layoutY="144" stroke="#333333" strokeType="INSIDE" strokeWidth="2" styleClass="" width="568"/>
     <Data cursor="DEFAULT" enabled="1" id="data-rect" visible="1"/>
@@ -14,7 +15,7 @@
       </font>
     </LabelEx>
     <Data cursor="DEFAULT" enabled="1" id="data-logo" visible="1"/>
-    <LabelEx alignment="CENTER_LEFT" autoSize="false" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="versionLabel" layoutX="608" layoutY="456" prefHeight="16" prefWidth="96" styleClass="label " text="v1.1" textAlignment="LEFT" textFill="#ffffff" underline="false" wrapText="false">
+    <LabelEx alignment="CENTER_LEFT" autoSize="false" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="versionLabel" layoutX="608" layoutY="456" prefHeight="16" prefWidth="96" styleClass="label " text="v1.2" textAlignment="LEFT" textFill="#ffffff" underline="false" wrapText="false">
       <font>
         <Font name="System Regular" size="12"/>
       </font>
@@ -32,12 +33,12 @@
       </font>
     </LabelEx>
     <Data cursor="DEFAULT" enabled="1" id="data-label3" visible=""/>
-    <LabelEx alignment="CENTER_LEFT" autoSize="false" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="closeButton" layoutX="608" layoutY="0" prefHeight="16" prefWidth="96" styleClass="label " text="X" textAlignment="LEFT" textFill="#ffffff" underline="false" wrapText="false">
+    <LabelEx alignment="CENTER_LEFT" autoSize="false" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="closeButtonOLD" layoutX="648" layoutY="-8" prefHeight="16" prefWidth="96" styleClass="label " text="X" textAlignment="LEFT" textFill="#ffffff" underline="false" wrapText="false">
       <font>
         <Font name="System Bold" size="20"/>
       </font>
     </LabelEx>
-    <Data cursor="DEFAULT" enabled="1" id="data-closeButton" visible="1"/>
+    <Data cursor="DEFAULT" enabled="1" id="data-closeButtonOLD" visible="1"/>
     <LabelEx alignment="CENTER_LEFT" autoSize="false" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="label5" layoutX="212" layoutY="80" prefHeight="17" prefWidth="216" styleClass="label " text="Программу не надо держать открытой" textAlignment="LEFT" textFill="#ffffff" underline="false" wrapText="false">
       <font>
         <Font name="System Regular" size="12"/>
@@ -68,8 +69,8 @@
         <Font name="System Bold" size="21"/>
       </font>
     </LabelEx>
-    <Data cursor="DEFAULT" enabled="1" id="data-addunblockButton" tooltipText="Добавить свой сайт" visible="1"/>
-    <FlatButton alignment="CENTER" borderRadius="4" color="#4d4d4d" contentDisplay="LEFT" ellipsisString="..." focusTraversable="true" graphicTextGap="4" hoverColor="#666666" id="deleteButton" layoutX="400" layoutY="440" prefHeight="24" prefWidth="104" styleClass="x-flat-button " text="Удалить" textAlignment="CENTER" textFill="#ffffff" underline="false" wrapText="false">
+    <Data cursor="DEFAULT" enabled="1" id="data-addunblockButton" tooltipText="" visible=""/>
+    <FlatButton alignment="CENTER" borderRadius="4" color="#4d4d4d" contentDisplay="LEFT" ellipsisString="..." focusTraversable="true" graphicTextGap="4" hoverColor="#666666" id="deleteButton" layoutX="400" layoutY="440" prefHeight="24" prefWidth="104" styleClass="x-flat-button " text="Добавить" textAlignment="CENTER" textFill="#ffffff" underline="false" wrapText="false">
       <font>
         <Font name="System Regular" size="12"/>
       </font>
@@ -81,8 +82,8 @@
       </font>
     </LabelEx>
     <Data cursor="DEFAULT" enabled="1" id="data-label10" visible="1"/>
-    <Data cursor="DEFAULT" enabled="1" id="data-label11" visible="1"/>
-    <LabelEx alignment="CENTER_LEFT" autoSize="false" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="label" layoutX="376" layoutY="144" prefHeight="168" prefWidth="112" styleClass="label " text="Viber&#10;Cloudflare&#10;SponsorBlock&#10;JutSu" textAlignment="LEFT" textFill="#ffffff" underline="false" wrapText="false">
+    <Data cursor="DEFAULT" enabled="1" id="data-label11" visible=""/>
+    <LabelEx alignment="CENTER_LEFT" autoSize="false" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="label" layoutX="376" layoutY="144" prefHeight="168" prefWidth="112" styleClass="label " text="Viber&#10;CloudFlare&#10;SponsorBlock&#10;JutSu" textAlignment="LEFT" textFill="#ffffff" underline="false" wrapText="false">
       <font>
         <Font name="System Bold" size="16"/>
       </font>
@@ -93,7 +94,7 @@
         <Font name="System Regular" size="12"/>
       </font>
     </LabelEx>
-    <Data cursor="DEFAULT" enabled="1" id="data-labelAlt" visible="1"/>
+    <Data cursor="DEFAULT" enabled="1" id="data-labelAlt" visible=""/>
     <com.jfoenix.controls.JFXCheckBox alignment="CENTER_LEFT" checkedColor="#0f9d58" contentDisplay="LEFT" ellipsisString="..." focusTraversable="true" graphicTextGap="4" id="checkboxAlt" layoutX="576" layoutY="320" prefHeight="24" prefWidth="24" selected="true" styleClass="check-box jfx-check-box " text="" textAlignment="LEFT" textFill="#000000" unCheckedColor="#4d4d4d" underline="false" wrapText="false">
       <font>
         <Font name="System Regular" size="12"/>
@@ -105,17 +106,28 @@
         <Font name="System Regular" size="12"/>
       </font>
     </LabelEx>
-    <LabelEx alignment="CENTER_LEFT" autoSize="false" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="settings" layoutX="576" layoutY="0" prefHeight="30" prefWidth="24" styleClass="label " text="⚙" textAlignment="LEFT" textFill="#ffffff" underline="false" wrapText="false">
+    <LabelEx alignment="CENTER_LEFT" autoSize="false" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="settingsOLD" layoutX="648" layoutY="16" prefHeight="30" prefWidth="24" styleClass="label " text="⚙" textAlignment="LEFT" textFill="#ffffff" underline="false" wrapText="false">
       <font>
         <Font name="System Bold" size="20"/>
       </font>
     </LabelEx>
-    <Data cursor="DEFAULT" enabled="1" id="data-settings" tooltipText="Настройки" visible="1"/>
+    <Data cursor="DEFAULT" enabled="1" id="data-settingsOLD" tooltipText="Настройки" visible="1"/>
     <LabelEx alignment="CENTER_LEFT" autoSize="false" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="errortext" layoutX="0" layoutY="0" opacity="0" prefHeight="56" prefWidth="576" styleClass="label " text="Fatal error: Uncaught exception 'php\io\IOException' with message 'java.io.IOException: Cannot run program &quot;service_install.bat&quot;: CreateProcess error=2, Не удается найти указанный файл' in res://php/gui/framework/functions.php on line 63, position 54" textAlignment="LEFT" textFill="#b31a1a" underline="false" wrapText="true">
       <font>
         <Font name="System Regular" size="12"/>
       </font>
     </LabelEx>
     <Data cursor="DEFAULT" enabled="1" id="data-errortext" visible=""/>
+    <Circle fill="#e64d4d" focusTraversable="false" id="closebutton" layoutX="24" layoutY="16" radius="8" stroke="#e64d4d" strokeType="INSIDE" strokeWidth="2" styleClass=""/>
+    <Data cursor="DEFAULT" enabled="1" id="data-closebutton" visible="1"/>
+    <Data cursor="DEFAULT" enabled="1" id="data-rect3" visible="1"/>
+    <Circle fill="#b399ff" focusTraversable="false" id="settings" layoutX="48" layoutY="16" radius="8" stroke="#b399ff" strokeType="INSIDE" strokeWidth="2" styleClass=""/>
+    <Data cursor="DEFAULT" enabled="1" id="data-settings" visible="1"/>
+    <LabelEx alignment="CENTER_LEFT" autoSize="false" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="aboutcursor" layoutX="672" layoutY="0" prefHeight="17" prefWidth="152" styleClass="label " text="Добавить Свой Сайт" textAlignment="LEFT" textFill="#ffff4d" underline="false" wrapText="false">
+      <font>
+        <Font name="System Regular" size="12"/>
+      </font>
+    </LabelEx>
+    <Data cursor="DEFAULT" enabled="1" id="data-aboutcursor" visible=""/>
   </children>
 </AnchorPane>

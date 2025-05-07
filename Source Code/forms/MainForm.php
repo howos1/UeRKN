@@ -17,9 +17,9 @@ class MainForm extends AbstractForm
     }
 
     /**
-     * @event closeButton.click-Left 
+     * @event closeButtonOLD.click-Left 
      */
-    function doCloseButtonClickLeft(UXMouseEvent $e = null)
+    function doCloseButtonOLDClickLeft(UXMouseEvent $e = null)
     {    
         
     }
@@ -59,9 +59,9 @@ class MainForm extends AbstractForm
     }
 
     /**
-     * @event settings.click-Left 
+     * @event settingsOLD.click-Left 
      */
-    function doSettingsClickLeft(UXMouseEvent $e = null)
+    function doSettingsOLDClickLeft(UXMouseEvent $e = null)
     {    
         
     }
@@ -73,6 +73,50 @@ class MainForm extends AbstractForm
     {    
         
     }
+
+    /**
+     * @event keyDown-Shift+N 
+     */
+    function doKeyDownShiftN(UXKeyEvent $e = null)
+    {    
+        
+    }
+
+    /**
+     * @event closebutton.click-Left 
+     */
+    function doClosebuttonClickLeft(UXMouseEvent $e = null)
+    {    
+        
+    }
+
+    /**
+     * @event settings.click-Left 
+     */
+    function doSettingsClickLeft(UXMouseEvent $e = null)
+    {    
+        
+    }
+
+    /**
+     * @event addunblockButton.mouseEnter 
+     */
+    function doAddunblockButtonMouseEnter(UXMouseEvent $e = null)
+    {    
+        
+    }
+
+    /**
+     * @event addunblockButton.mouseExit 
+     */
+    function doAddunblockButtonMouseExit(UXMouseEvent $e = null)
+    {    
+        
+    }
+
+
+
+
 
 
 

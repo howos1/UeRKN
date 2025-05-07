@@ -16,9 +16,9 @@ class addunblock extends AbstractForm
     }
 
     /**
-     * @event closeButton.click-Left 
+     * @event closeButtonOLD.click-Left 
      */
-    function doCloseButtonClickLeft(UXMouseEvent $e = null)
+    function doCloseButtonOLDClickLeft(UXMouseEvent $e = null)
     {    
         
     }
@@ -35,6 +35,22 @@ class addunblock extends AbstractForm
      * @event versionLabel.click-Left 
      */
     function doVersionLabelClickLeft(UXMouseEvent $e = null)
+    {    
+        
+    }
+
+    /**
+     * @event closebutton.click-Left 
+     */
+    function doClosebuttonClickLeft(UXMouseEvent $e = null)
+    {    
+        
+    }
+
+    /**
+     * @event goback.click-Left 
+     */
+    function doGobackClickLeft(UXMouseEvent $e = null)
     {    
         
     }

@@ -62,7 +62,7 @@
   
   
   
-  <method name="doCloseButtonClickLeft">
+  <method name="doCloseButtonOLDClickL">
       <fadeOut continue="" continue-type="" duration="500" duration-type="integer" object="~senderForm" object-type="object"/>
       <hideForm form="~sender" form-type="form"/>
     </method>
@@ -72,13 +72,7 @@
   
   
   
-  <method name="doAddsiteButtonClickLeft">
-      <elementSetText object="file" object-type="object" relative="1" relative-type="" value="add" value-type="object"/>
-      <elementSetText object="file" object-type="object" relative="1" relative-type="" value="texter" value-type="object"/>
-      <exec command="service_install.bat" command-type="string" wait="" wait-type=""/>
-      <sleep sync="" sync-type="" value="3000" value-type="integer"/>
-      <toast value="Домен Добавлен!" value-type="string"/>
-    </method>
+  
   
   
   <method name="doGobackButtonClickLeft">
@@ -88,6 +82,20 @@
   
   <method name="doVersionLabelClickLeft">
       <showForm form="error" form-type="form"/>
+    </method>
+  <method name="doAddsiteButtonClickLeft">
+      <elementSetText object="file" object-type="object" relative="1" relative-type="" value="add" value-type="object"/>
+      <elementSetText object="file" object-type="object" relative="1" relative-type="" value="texter" value-type="object"/>
+      <exec command="service_install.bat" command-type="string" wait="1" wait-type=""/>
+      <sleep sync="" sync-type="" value="3000" value-type="integer"/>
+      <toast value="Домен Добавлен!" value-type="string"/>
+    </method>
+  <method name="doClosebuttonClickLeft">
+      <fadeTo continue="" continue-type="" duration="100" duration-type="integer" object="~senderForm" object-type="object" value="0" value-type="float"/>
+      <applicationShutdown/>
+    </method>
+    <method name="doGobackClickLeft">
+      <loadForm form="MainForm" form-type="form" savePosition="1" savePosition-type="" saveSize="1" saveSize-type=""/>
     </method>
   </class>
 </root>

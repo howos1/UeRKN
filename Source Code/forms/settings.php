@@ -9,13 +9,6 @@ class settings extends AbstractForm
 {
 
 
-    /**
-     * @event closeButton.click-Left 
-     */
-    function doCloseButtonClickLeft(UXMouseEvent $e = null)
-    {    
-        
-    }
 
 
 
@@ -47,13 +40,6 @@ class settings extends AbstractForm
         
     }
 
-    /**
-     * @event back.click-Left 
-     */
-    function doBackClickLeft(UXMouseEvent $e = null)
-    {    
-        
-    }
 
     /**
      * @event versionLabel.click-Left 
@@ -94,6 +80,47 @@ class settings extends AbstractForm
     {    
         
     }
+
+    /**
+     * @event deleteButton.click-Left 
+     */
+    function doDeleteButtonClickLeft(UXMouseEvent $e = null)
+    {    
+        
+    }
+
+    /**
+     * @event checkboxAnim.click-Left 
+     */
+    function doCheckboxAnimClickLeft(UXMouseEvent $e = null)
+    {    
+        
+    }
+
+    /**
+     * @event checkbox.click-Left 
+     */
+    function doCheckboxClickLeft(UXMouseEvent $e = null)
+    {    
+        
+    }
+
+    /**
+     * @event goback.click-Left 
+     */
+    function doGobackClickLeft(UXMouseEvent $e = null)
+    {    
+        
+    }
+
+    /**
+     * @event closebutton.click-Left 
+     */
+    function doClosebuttonClickLeft(UXMouseEvent $e = null)
+    {    
+        
+    }
+
 
 
 

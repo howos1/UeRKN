@@ -2,7 +2,7 @@
 <?import javafx.scene.*?><?import javafx.collections.*?><?import javafx.scene.layout.*?><?import javafx.scene.control.*?><?import javafx.scene.text.*?><?import javafx.scene.image.*?><?import javafx.scene.shape.*?><?import javafx.scene.paint.*?><?import javafx.scene.web.*?><?import javafx.geometry.*?><?import java.lang.*?><?import org.develnext.jphp.ext.javafx.classes.data.*?><?import org.develnext.jphp.ext.javafx.support.*?><?import org.develnext.jphp.ext.javafx.support.control.*?><?import org.develnext.jphp.ext.game.support.*?><AnchorPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" AnchorPane.bottomAnchor="0" AnchorPane.leftAnchor="0" AnchorPane.rightAnchor="0" AnchorPane.topAnchor="0" focusTraversable="false" id="" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="480" prefWidth="640" styleClass="">
   <children>
     <Rectangle arcHeight="30" arcWidth="30" fill="#1a1a1a" focusTraversable="false" height="480" id="rect" layoutX="0" layoutY="0" stroke="#4d804d" strokeType="INSIDE" strokeWidth="2" styleClass="" width="640"/>
-    <Rectangle arcHeight="20" arcWidth="20" fill="#333333" focusTraversable="false" height="256" id="rect4" layoutX="32" layoutY="104" stroke="#333333" strokeType="INSIDE" strokeWidth="2" styleClass="" width="568"/>
+    <Rectangle arcHeight="20" arcWidth="20" fill="#333333" focusTraversable="false" height="256" id="rect4" layoutX="36" layoutY="104" stroke="#333333" strokeType="INSIDE" strokeWidth="2" styleClass="" width="568"/>
     <Data cursor="DEFAULT" enabled="1" id="data-rect" visible="1"/>
     <Rectangle arcHeight="0" arcWidth="0" fill="#cce6ff00" focusTraversable="false" height="24" id="rectAlt" layoutX="8" layoutY="0" stroke="#334db300" strokeType="INSIDE" strokeWidth="2" styleClass="" width="624"/>
     <Data cursor="DEFAULT" enabled="1" id="data-rectAlt" visible="1"/>
@@ -14,18 +14,12 @@
       </font>
     </LabelEx>
     <Data cursor="DEFAULT" enabled="1" id="data-logo" visible="1"/>
-    <LabelEx alignment="CENTER_LEFT" autoSize="false" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="versionLabel" layoutX="608" layoutY="456" prefHeight="16" prefWidth="96" styleClass="label " text="v1.1" textAlignment="LEFT" textFill="#ffffff" underline="false" wrapText="false">
+    <LabelEx alignment="CENTER_LEFT" autoSize="false" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="versionLabel" layoutX="608" layoutY="456" prefHeight="16" prefWidth="96" styleClass="label " text="v1.2" textAlignment="LEFT" textFill="#ffffff" underline="false" wrapText="false">
       <font>
         <Font name="System Regular" size="12"/>
       </font>
     </LabelEx>
     <Data cursor="DEFAULT" enabled="1" id="data-versionLabel" visible="1"/>
-    <LabelEx alignment="CENTER_LEFT" autoSize="false" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="closeButton" layoutX="608" layoutY="0" prefHeight="16" prefWidth="96" styleClass="label " text="X" textAlignment="LEFT" textFill="#ffffff" underline="false" wrapText="false">
-      <font>
-        <Font name="System Bold" size="20"/>
-      </font>
-    </LabelEx>
-    <Data cursor="DEFAULT" enabled="1" id="data-closeButton" visible="1"/>
     <Data cursor="DEFAULT" enabled="1" id="data-label8" visible="1"/>
     <Data cursor="DEFAULT" enabled="1" id="data-rect4" visible="1"/>
     <LabelEx alignment="CENTER_LEFT" autoSize="false" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="label8" layoutX="260" layoutY="104" prefHeight="32" prefWidth="120" styleClass="label " text="Настройки" textAlignment="LEFT" textFill="#ffffff" underline="false" wrapText="false">
@@ -51,13 +45,7 @@
       </font>
     </com.jfoenix.controls.JFXCheckBox>
     <Data cursor="DEFAULT" enabled="1" id="data-checkboxON" visible=""/>
-    <LabelEx alignment="CENTER_LEFT" autoSize="false" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="back" layoutX="568" layoutY="-8" prefHeight="40" prefWidth="32" styleClass="label " text="&lt;--" textAlignment="LEFT" textFill="#ffffff" underline="false" wrapText="false">
-      <font>
-        <Font name="System Bold" size="20"/>
-      </font>
-    </LabelEx>
-    <Data cursor="DEFAULT" enabled="1" id="data-back" tooltipText="Вернутся Назад" visible="1"/>
-    <LabelEx alignment="CENTER_LEFT" autoSize="false" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="about" layoutX="576" layoutY="328" prefHeight="30" prefWidth="16" styleClass="label " text="?" textAlignment="LEFT" textFill="#ffffff" underline="false" wrapText="false">
+    <LabelEx alignment="CENTER_LEFT" autoSize="false" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="about" layoutX="579" layoutY="325" prefHeight="30" prefWidth="16" styleClass="label " text="?" textAlignment="LEFT" textFill="#ffffff" underline="false" wrapText="false">
       <font>
         <Font name="System Bold" size="20"/>
       </font>
@@ -69,5 +57,33 @@
       </font>
     </LabelEx>
     <Data cursor="DEFAULT" enabled="1" id="data-aboutcursor" visible="1"/>
+    <FlatButton alignment="CENTER" borderRadius="4" color="#4d4d4d" contentDisplay="LEFT" ellipsisString="..." focusTraversable="true" graphicTextGap="4" hoverColor="#666666" id="deleteButton" layoutX="432" layoutY="328" prefHeight="24" prefWidth="136" styleClass="x-flat-button " text="Удалить Разблокировку" textAlignment="CENTER" textFill="#ffffff" underline="false" wrapText="false">
+      <font>
+        <Font name="System Regular" size="12"/>
+      </font>
+    </FlatButton>
+    <Data cursor="HAND" enabled="1" id="data-deleteButton" visible="1"/>
+    <com.jfoenix.controls.JFXCheckBox alignment="CENTER_LEFT" checkedColor="#0f9d58" contentDisplay="LEFT" ellipsisString="..." focusTraversable="true" graphicTextGap="4" id="checkboxAnim" layoutX="48" layoutY="216" prefHeight="24" prefWidth="24" styleClass="check-box jfx-check-box " text="" textAlignment="LEFT" textFill="#000000" unCheckedColor="#4d4d4d" underline="false" wrapText="false">
+      <font>
+        <Font name="System Regular" size="12"/>
+      </font>
+    </com.jfoenix.controls.JFXCheckBox>
+    <Data cursor="DEFAULT" enabled="1" id="data-checkboxAnim" visible=""/>
+    <LabelEx alignment="CENTER_LEFT" autoSize="false" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="labelAlt" layoutX="74" layoutY="196" prefHeight="17" prefWidth="144" styleClass="label " text="Отключить Обновления" textAlignment="LEFT" textFill="#ffffff" underline="false" wrapText="false">
+      <font>
+        <Font name="System Regular" size="12"/>
+      </font>
+    </LabelEx>
+    <Data cursor="DEFAULT" enabled="1" id="data-labelAlt" visible=""/>
+    <com.jfoenix.controls.JFXCheckBox alignment="CENTER_LEFT" checkedColor="#0f9d58" contentDisplay="LEFT" ellipsisString="..." focusTraversable="true" graphicTextGap="4" id="checkbox" layoutX="48" layoutY="192" prefHeight="24" prefWidth="144" styleClass="check-box jfx-check-box " text="" textAlignment="LEFT" textFill="#000000" unCheckedColor="#5a5a5a" underline="false" wrapText="false">
+      <font>
+        <Font name="System Regular" size="12"/>
+      </font>
+    </com.jfoenix.controls.JFXCheckBox>
+    <Data cursor="DEFAULT" enabled="1" id="data-checkbox" visible=""/>
+    <Circle fill="#ffff4d" focusTraversable="false" id="goback" layoutX="48" layoutY="16" radius="8" stroke="#ffff4d" strokeType="INSIDE" strokeWidth="2" styleClass=""/>
+    <Data cursor="DEFAULT" enabled="1" id="data-goback" visible="1"/>
+    <Circle fill="#e64d4d" focusTraversable="false" id="closebutton" layoutX="24" layoutY="16" radius="8" stroke="#e64d4d" strokeType="INSIDE" strokeWidth="2" styleClass=""/>
+    <Data cursor="DEFAULT" enabled="1" id="data-closebutton" visible="1"/>
   </children>
 </AnchorPane>
