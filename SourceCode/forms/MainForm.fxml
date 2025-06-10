@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?import javafx.scene.*?><?import javafx.collections.*?><?import javafx.scene.layout.*?><?import javafx.scene.control.*?><?import javafx.scene.text.*?><?import javafx.scene.image.*?><?import javafx.scene.shape.*?><?import javafx.scene.paint.*?><?import javafx.scene.web.*?><?import javafx.geometry.*?><?import java.lang.*?><?import org.develnext.jphp.ext.javafx.classes.data.*?><?import org.develnext.jphp.ext.javafx.support.*?><?import org.develnext.jphp.ext.javafx.support.control.*?><?import org.develnext.jphp.ext.game.support.*?><AnchorPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" AnchorPane.bottomAnchor="0" AnchorPane.leftAnchor="0" AnchorPane.rightAnchor="0" AnchorPane.topAnchor="0" focusTraversable="false" id="" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="416" prefWidth="712" styleClass="">
+  <children>
+    <Rectangle arcHeight="30" arcWidth="30" fill="#1a1a1a" focusTraversable="false" height="416" id="rect5" layoutX="0" layoutY="0" stroke="#e64d4d" strokeType="INSIDE" strokeWidth="2" styleClass="" width="712"/>
+    <Rectangle arcHeight="30" arcWidth="30" fill="#1a1a1a" focusTraversable="false" height="416" id="rect" layoutX="0" layoutY="0" stroke="#4d804d" strokeType="INSIDE" strokeWidth="2" styleClass="" width="712"/>
+    <Rectangle arcHeight="20" arcWidth="20" fill="#333333" focusTraversable="false" height="208" id="rect4" layoutX="8" layoutY="40" stroke="#333333" strokeType="INSIDE" strokeWidth="2" styleClass="" width="568"/>
+    <Data cursor="DEFAULT" enabled="1" id="data-rect" visible="1"/>
+    <Rectangle arcHeight="0" arcWidth="0" fill="#cce6ff00" focusTraversable="false" height="24" id="rectAlt" layoutX="8" layoutY="0" stroke="#334db300" strokeType="INSIDE" strokeWidth="2" styleClass="" width="624"/>
+    <Data cursor="DEFAULT" enabled="1" id="data-rectAlt" visible="1"/>
+    <Separator focusTraversable="false" id="separator" layoutX="8" layoutY="24" opacity="0.6219512195122" orientation="HORIZONTAL" prefHeight="8" prefWidth="696" styleClass="separator "/>
+    <Data cursor="DEFAULT" enabled="1" id="data-separator" visible="1"/>
+    <Data cursor="DEFAULT" enabled="1" id="data-logo" visible="1"/>
+    <LabelEx alignment="CENTER_LEFT" autoSize="false" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="versionLabel" layoutX="608" layoutY="456" prefHeight="16" prefWidth="96" styleClass="label " text="v1.3" textAlignment="LEFT" textFill="#ffffff" underline="false" wrapText="false">
+      <font>
+        <Font name="System Regular" size="12"/>
+      </font>
+    </LabelEx>
+    <Data cursor="DEFAULT" enabled="1" id="data-versionLabel" visible="1"/>
+    <LabelEx alignment="CENTER_LEFT" autoSize="false" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="label3" layoutX="240" layoutY="336" prefHeight="30" prefWidth="264" styleClass="label " text="Успешно Разблокировано!" textAlignment="LEFT" textFill="#ffffff" underline="false" wrapText="false">
+      <font>
+        <Font name="System Bold" size="20"/>
+      </font>
+    </LabelEx>
+    <Data cursor="DEFAULT" enabled="1" id="data-label3" visible=""/>
+    <LabelEx alignment="CENTER_LEFT" autoSize="false" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="label5" layoutX="8" layoutY="248" prefHeight="17" prefWidth="216" styleClass="label " text="Программу не надо держать открытой" textAlignment="LEFT" textFill="#ffffff" underline="false" wrapText="false">
+      <font>
+        <Font name="System Regular" size="12"/>
+      </font>
+    </LabelEx>
+    <Data cursor="DEFAULT" enabled="1" id="data-label5" visible="1"/>
+    <LabelEx alignment="CENTER" autoSize="false" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="label6" layoutX="576" layoutY="32" prefHeight="64" prefWidth="136" styleClass="label " text="Обновление 1.4&#10;Обновлен Интерфейс&#10;БагФиксы&#10;Вырезан ТрешКод (30%)" textAlignment="CENTER" textFill="#ffffff" underline="false" wrapText="false">
+      <font>
+        <Font name="System Bold" size="10"/>
+      </font>
+    </LabelEx>
+    <Data cursor="DEFAULT" enabled="1" id="data-label6" visible="1"/>
+    <Data cursor="DEFAULT" enabled="1" id="data-label7" visible="1"/>
+    <Data cursor="DEFAULT" enabled="1" id="data-label8" visible="1"/>
+    <Data cursor="DEFAULT" enabled="1" id="data-rect4" visible="1"/>
+    <LabelEx alignment="TOP_CENTER" autoSize="false" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="label7" layoutX="16" layoutY="64" prefHeight="176" prefWidth="72" styleClass="label " text="YouTube&#10;Discord&#10;Steam&#10;7tv&#10;Meta&#10;Facebook&#10;Twitter" textAlignment="LEFT" textFill="#ffffff" underline="false" wrapText="false">
+      <font>
+        <Font name="System Bold" size="16"/>
+      </font>
+    </LabelEx>
+    <LabelEx alignment="CENTER_LEFT" autoSize="false" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="label8" layoutX="15" layoutY="37" prefHeight="32" prefWidth="256" styleClass="label " text="Будет Разблокировано" textAlignment="LEFT" textFill="#ffffff" underline="false" wrapText="false">
+      <font>
+        <Font name="System Bold" size="22"/>
+      </font>
+    </LabelEx>
+    <LabelEx alignment="TOP_CENTER" autoSize="false" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="label10" layoutX="96" layoutY="64" prefHeight="168" prefWidth="96" styleClass="label " text="Wikipedia&#10;Envato&#10;RuTracker&#10;Patreon&#10;SoundCloud&#10;SpeedTest&#10;Metacritic" textAlignment="LEFT" textFill="#ffffff" underline="false" wrapText="false">
+      <font>
+        <Font name="System Bold" size="16"/>
+      </font>
+    </LabelEx>
+    <Data cursor="DEFAULT" enabled="1" id="data-label10" visible="1"/>
+    <LabelEx alignment="TOP_CENTER" autoSize="false" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="label" layoutX="192" layoutY="64" prefHeight="168" prefWidth="112" styleClass="label " text="Viber&#10;CloudFlare&#10;SponsorBlock&#10;JutSu&#10;Chess.com" textAlignment="LEFT" textFill="#ffffff" underline="false" wrapText="false">
+      <font>
+        <Font name="System Bold" size="16"/>
+      </font>
+    </LabelEx>
+    <Data cursor="DEFAULT" enabled="1" id="data-label" visible="1"/>
+    <LabelEx alignment="CENTER_LEFT" autoSize="false" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="labelAlt" layoutX="260" layoutY="172" prefHeight="16" prefWidth="96" rotate="17.560975609756" styleClass="label " text="NEW" textAlignment="LEFT" textFill="#e6e64d" underline="false" wrapText="false">
+      <font>
+        <Font name="System Regular" size="12"/>
+      </font>
+    </LabelEx>
+    <Data cursor="DEFAULT" enabled="1" id="data-labelAlt" visible="1"/>
+    <Data cursor="DEFAULT" enabled="1" id="data-closebutton" visible="1"/>
+    <Data cursor="DEFAULT" enabled="1" id="data-settings" visible="1"/>
+    <com.jfoenix.controls.JFXButton alignment="CENTER" buttonType="RAISED" contentDisplay="LEFT" ellipsisString="..." focusTraversable="true" graphicTextGap="4" id="unblockButton" layoutX="296" layoutY="368" prefHeight="32" prefWidth="160" ripplerFill="#003300" style="-fx-background-color: #4d804d;&#10;-fx-background-radius: 8;" styleClass="button jfx-button " text="Разблокировать" textAlignment="LEFT" textFill="#ffffff" underline="false" wrapText="false">
+      <font>
+        <Font name="System Bold" size="16"/>
+      </font>
+    </com.jfoenix.controls.JFXButton>
+    <Data cursor="HAND" enabled="1" id="data-unblockButton" visible="1"/>
+    <com.jfoenix.controls.JFXButton alignment="CENTER" buttonType="RAISED" contentDisplay="LEFT" ellipsisString="..." focusTraversable="true" graphicTextGap="4" id="addunblock" layoutX="464" layoutY="208" prefHeight="24" prefWidth="104" ripplerFill="#999999" style="-fx-background-color: #4d4d4d;&#10;-fx-background-radius: 8;" styleClass="button jfx-button " text="Добавить" textAlignment="LEFT" textFill="#ffffff" underline="false" wrapText="false">
+      <font>
+        <Font name="System Regular" size="13"/>
+      </font>
+    </com.jfoenix.controls.JFXButton>
+    <Data cursor="HAND" enabled="1" id="data-addunblock" visible="1"/>
+    <Circle fill="#e64d4d" focusTraversable="false" id="closebutton" layoutX="24" layoutY="16" radius="8" stroke="#e64d4d" strokeType="INSIDE" strokeWidth="2" styleClass=""/>
+    <Circle fill="#b399ff" focusTraversable="false" id="settings" layoutX="48" layoutY="16" radius="8" stroke="#b399ff" strokeType="INSIDE" strokeWidth="2" styleClass=""/>
+    <Data cursor="DEFAULT" enabled="1" id="data-rect5" visible="1"/>
+    <LabelEx alignment="CENTER" autoSize="false" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="logoRED" layoutX="336" layoutY="0" prefHeight="30" prefWidth="72" styleClass="label " text="UeRKN" textAlignment="CENTER" textFill="#e64d4d" underline="false" wrapText="false">
+      <font>
+        <Font name="System Bold" size="20"/>
+      </font>
+    </LabelEx>
+    <Data cursor="DEFAULT" enabled="1" id="data-logoRED" visible=""/>
+    <LabelEx alignment="CENTER" autoSize="false" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="logo" layoutX="336" layoutY="0" prefHeight="30" prefWidth="72" styleClass="label " text="UeRKN" textAlignment="CENTER" textFill="#80b380" underline="false" wrapText="false">
+      <font>
+        <Font name="System Bold" size="20"/>
+      </font>
+    </LabelEx>
+    <LabelEx alignment="CENTER_LEFT" autoSize="false" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="label9" layoutX="8" layoutY="384" prefHeight="16" prefWidth="96" styleClass="label " text="+" textAlignment="LEFT" textFill="#666666" underline="false" wrapText="false">
+      <font>
+        <Font name="System Bold" size="20"/>
+      </font>
+    </LabelEx>
+    <Data cursor="DEFAULT" enabled="1" id="data-label9" visible="1"/>
+    <com.jfoenix.controls.JFXComboBox editable="false" focusColor="#336633" focusTraversable="true" id="combobox" labelFloat="" layoutX="8" layoutY="384" opacity="0" prefHeight="25" prefWidth="24" promptText="" style="-fx-background-color: #000000;" unFocusColor="#4d4d4d" value="" visibleRowCount="10">
+      <items xmlns:fx="http://javafx.com/fxml">
+        <FXCollections fx:factory="observableArrayList">
+          <String fx:value="Активировать"/>
+        </FXCollections>
+      </items>
+      <styleClass xmlns:fx="http://javafx.com/fxml">
+        <String fx:value="combo-box-base"/>
+        <String fx:value="combo-box"/>
+        <String fx:value="jfx-combo-box"/>
+      </styleClass>
+    </com.jfoenix.controls.JFXComboBox>
+    <Data cursor="DEFAULT" enabled="1" id="data-combobox" visible=""/>
+    <LabelEx alignment="CENTER" autoSize="false" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="label4" layoutX="576" layoutY="440" prefHeight="64" prefWidth="136" styleClass="label " text="Обновление 1.4&#10;Обновлен Интерфейс&#10;БагФиксы&#10;Вырезан ТрешКод (30%)" textAlignment="CENTER" textFill="#ffffff" underline="false" wrapText="false">
+      <font>
+        <Font name="System Bold" size="11"/>
+      </font>
+    </LabelEx>
+    <Data cursor="DEFAULT" enabled="1" id="data-label4" visible=""/>
+    <LabelEx alignment="CENTER_LEFT" autoSize="false" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="label11" layoutX="8" layoutY="256" prefHeight="40" prefWidth="344" styleClass="label " text="(Некоторые сервисы могут не рабоать. Например battle.net)" textAlignment="LEFT" textFill="#ffffff" underline="false" wrapText="false">
+      <font>
+        <Font name="System Regular" size="12"/>
+      </font>
+    </LabelEx>
+    <Data cursor="DEFAULT" enabled="1" id="data-label11" visible="1"/>
+  </children>
+</AnchorPane>

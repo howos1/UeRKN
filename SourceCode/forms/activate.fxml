@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?import javafx.scene.*?><?import javafx.collections.*?><?import javafx.scene.layout.*?><?import javafx.scene.control.*?><?import javafx.scene.text.*?><?import javafx.scene.image.*?><?import javafx.scene.shape.*?><?import javafx.scene.paint.*?><?import javafx.scene.web.*?><?import javafx.geometry.*?><?import java.lang.*?><?import org.develnext.jphp.ext.javafx.classes.data.*?><?import org.develnext.jphp.ext.javafx.support.*?><?import org.develnext.jphp.ext.javafx.support.control.*?><?import org.develnext.jphp.ext.game.support.*?><AnchorPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" AnchorPane.bottomAnchor="0" AnchorPane.leftAnchor="0" AnchorPane.rightAnchor="0" AnchorPane.topAnchor="0" focusTraversable="false" id="" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="288" prefWidth="640" styleClass="">
+  <children>
+    <Rectangle arcHeight="30" arcWidth="30" fill="#1a1a1a" focusTraversable="false" height="288" id="rect" layoutX="0" layoutY="0" stroke="#669966" strokeType="INSIDE" strokeWidth="2" styleClass="" width="640"/>
+    <Data cursor="DEFAULT" enabled="1" id="data-rect" visible="1"/>
+    <TextField alignment="CENTER" editable="true" focusTraversable="true" id="edit" layoutX="224" layoutY="120" prefColumnCount="12" prefHeight="32" prefWidth="192" promptText="Введите Ключ" styleClass="text-input text-field " text="">
+      <font>
+        <Font name="System Regular" size="12"/>
+      </font>
+    </TextField>
+    <Data cursor="DEFAULT" enabled="1" id="data-edit" visible="1"/>
+    <FlatButton alignment="CENTER" borderRadius="10" color="#1a4d1a" contentDisplay="LEFT" ellipsisString="..." focusTraversable="true" graphicTextGap="4" hoverColor="#336633" id="button" layoutX="248" layoutY="168" prefHeight="32" prefWidth="144" styleClass="x-flat-button " text="Активировать" textAlignment="CENTER" textFill="#ffffff" underline="false" wrapText="false">
+      <font>
+        <Font name="System Regular" size="12"/>
+      </font>
+    </FlatButton>
+    <Data cursor="DEFAULT" enabled="1" id="data-button" visible="1"/>
+    <Separator focusTraversable="false" id="separator" layoutX="12" layoutY="24" orientation="HORIZONTAL" prefHeight="8" prefWidth="616" styleClass="separator "/>
+    <Data cursor="DEFAULT" enabled="1" id="data-separator" visible="1"/>
+    <LabelEx alignment="CENTER_LEFT" autoSize="false" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="labelAlt" layoutX="184" layoutY="48" prefHeight="73" prefWidth="272" styleClass="label " text="Активация" textAlignment="LEFT" textFill="#ffffff" underline="false" wrapText="false">
+      <font>
+        <Font name="System Bold" size="50"/>
+      </font>
+    </LabelEx>
+    <Data cursor="DEFAULT" enabled="1" id="data-labelAlt" visible="1"/>
+    <Circle fill="#e64d4d" focusTraversable="false" id="closebutton" layoutX="24" layoutY="16" radius="8" stroke="#e64d4d" strokeType="INSIDE" strokeWidth="2" styleClass=""/>
+    <Data cursor="DEFAULT" enabled="1" id="data-closebutton" visible="1"/>
+  </children>
+</AnchorPane>

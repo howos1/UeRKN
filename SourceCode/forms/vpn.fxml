@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?import javafx.scene.*?><?import javafx.collections.*?><?import javafx.scene.layout.*?><?import javafx.scene.control.*?><?import javafx.scene.text.*?><?import javafx.scene.image.*?><?import javafx.scene.shape.*?><?import javafx.scene.paint.*?><?import javafx.scene.web.*?><?import javafx.geometry.*?><?import java.lang.*?><?import org.develnext.jphp.ext.javafx.classes.data.*?><?import org.develnext.jphp.ext.javafx.support.*?><?import org.develnext.jphp.ext.javafx.support.control.*?><?import org.develnext.jphp.ext.game.support.*?><AnchorPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" AnchorPane.bottomAnchor="0" AnchorPane.leftAnchor="0" AnchorPane.rightAnchor="0" AnchorPane.topAnchor="0" focusTraversable="false" id="" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="480" prefWidth="528" styleClass="">
+  <children>
+    <Rectangle arcHeight="30" arcWidth="30" fill="#1a1a1a" focusTraversable="false" height="480" id="rect" layoutX="0" layoutY="0" stroke="#4d804d" strokeType="INSIDE" strokeWidth="2" styleClass="" width="528"/>
+    <Rectangle arcHeight="20" arcWidth="20" fill="#333333" focusTraversable="false" height="248" id="rect4" layoutX="96" layoutY="144" stroke="#333333" strokeType="INSIDE" strokeWidth="2" styleClass="" width="336"/>
+    <com.jfoenix.controls.JFXSpinner focusTraversable="false" id="progressIndicator" layoutX="184" layoutY="159" prefHeight="160" prefWidth="160" progress="-1" radius="129" styleClass="progress-indicator jfx-spinner "/>
+    <Data cursor="DEFAULT" enabled="1" id="data-rect" visible="1"/>
+    <Rectangle arcHeight="0" arcWidth="0" fill="#cce6ff00" focusTraversable="false" height="24" id="rectAlt" layoutX="8" layoutY="0" stroke="#334db300" strokeType="INSIDE" strokeWidth="2" styleClass="" width="624"/>
+    <Data cursor="DEFAULT" enabled="1" id="data-rectAlt" visible="1"/>
+    <Separator focusTraversable="false" id="separator" layoutX="8" layoutY="24" opacity="0.6219512195122" orientation="HORIZONTAL" prefHeight="8" prefWidth="512" styleClass="separator "/>
+    <Data cursor="DEFAULT" enabled="1" id="data-separator" visible="1"/>
+    <LabelEx alignment="CENTER" autoSize="false" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="logo" layoutX="200" layoutY="32" prefHeight="64" prefWidth="128" styleClass="label " text="UeRKN" textAlignment="CENTER" textFill="#80b380" underline="false" wrapText="false">
+      <font>
+        <Font name="System Bold" size="36"/>
+      </font>
+    </LabelEx>
+    <Data cursor="DEFAULT" enabled="1" id="data-logo" visible="1"/>
+    <LabelEx alignment="CENTER_LEFT" autoSize="false" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="versionLabel" layoutX="496" layoutY="456" prefHeight="17" prefWidth="40" styleClass="label " text="v1.2" textAlignment="LEFT" textFill="#ffffff" underline="false" wrapText="false">
+      <font>
+        <Font name="System Regular" size="12"/>
+      </font>
+    </LabelEx>
+    <Data cursor="DEFAULT" enabled="1" id="data-versionLabel" visible="1"/>
+    <LabelEx alignment="CENTER_LEFT" autoSize="false" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="closeButton" layoutX="504" layoutY="0" prefHeight="16" prefWidth="96" styleClass="label " text="X" textAlignment="LEFT" textFill="#ffffff" underline="false" wrapText="false">
+      <font>
+        <Font name="System Bold" size="20"/>
+      </font>
+    </LabelEx>
+    <Data cursor="DEFAULT" enabled="1" id="data-closeButton" visible="1"/>
+    <Data cursor="DEFAULT" enabled="1" id="data-rect4" visible="1"/>
+    <LabelEx alignment="CENTER_LEFT" autoSize="false" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="settings" layoutX="480" layoutY="0" prefHeight="30" prefWidth="24" styleClass="label " text="⚙" textAlignment="LEFT" textFill="#ffffff" underline="false" wrapText="false">
+      <font>
+        <Font name="System Bold" size="20"/>
+      </font>
+    </LabelEx>
+    <Data cursor="DEFAULT" enabled="1" id="data-settings" tooltipText="Настройки" visible="1"/>
+    <LabelEx alignment="CENTER_LEFT" autoSize="false" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="errortext" layoutX="0" layoutY="8" opacity="0" prefHeight="56" prefWidth="576" styleClass="label " text="Fatal error: Uncaught exception 'php\io\IOException' with message 'java.io.IOException: Cannot run program &quot;service_install.bat&quot;: CreateProcess error=2, Не удается найти указанный файл' in res://php/gui/framework/functions.php on line 63, position 54" textAlignment="LEFT" textFill="#b31a1a" underline="false" wrapText="true">
+      <font>
+        <Font name="System Regular" size="12"/>
+      </font>
+    </LabelEx>
+    <Data cursor="DEFAULT" enabled="1" id="data-errortext" visible=""/>
+    <Circle fill="#1a1a1a" focusTraversable="false" id="connectButton" layoutX="264" layoutY="240" radius="76" stroke="#4d4d4d" strokeType="INSIDE" strokeWidth="2" styleClass=""/>
+    <Data cursor="DEFAULT" enabled="" id="data-connectButton" visible="1"/>
+    <Data cursor="DEFAULT" enabled="1" id="data-progressIndicator" visible=""/>
+    <LabelEx alignment="CENTER" autoSize="false" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="labelStatus" layoutX="220" layoutY="368" prefHeight="17" prefWidth="88" styleClass="label " text="не подключено" textAlignment="LEFT" textFill="#ffffff" underline="false" wrapText="false">
+      <font>
+        <Font name="System Regular" size="12"/>
+      </font>
+    </LabelEx>
+    <Data cursor="DEFAULT" enabled="1" id="data-labelStatus" visible="1"/>
+    <com.jfoenix.controls.JFXCheckBox alignment="CENTER_LEFT" checkedColor="#0f9d58" contentDisplay="LEFT" ellipsisString="..." focusTraversable="true" graphicTextGap="4" id="checkbox" layoutX="8" layoutY="0" prefHeight="24" prefWidth="144" styleClass="check-box jfx-check-box " text="emulate connection" textAlignment="LEFT" textFill="#ffffff" unCheckedColor="#5a5a5a" underline="false" wrapText="false">
+      <font>
+        <Font name="System Regular" size="12"/>
+      </font>
+    </com.jfoenix.controls.JFXCheckBox>
+    <Data cursor="DEFAULT" enabled="1" id="data-checkbox" visible="1"/>
+    <Circle fill="#e64d4d" focusTraversable="false" id="connectStatus" layoutX="416" layoutY="160" radius="8" stroke="#334db3" strokeType="INSIDE" strokeWidth="0" styleClass=""/>
+    <Data cursor="DEFAULT" enabled="1" id="data-connectStatus" visible="1"/>
+    <Circle fill="#e64d4d" focusTraversable="false" id="circle" layoutX="544" layoutY="8" radius="8" stroke="#334db3" strokeType="INSIDE" strokeWidth="0" styleClass=""/>
+    <Data cursor="DEFAULT" enabled="1" id="data-circle" visible="1"/>
+    <Circle fill="#669966" focusTraversable="false" id="connectStatusON" layoutX="544" layoutY="24" radius="8" stroke="#334db3" strokeType="INSIDE" strokeWidth="0" styleClass=""/>
+    <Data cursor="DEFAULT" enabled="1" id="data-connectStatusON" visible="1"/>
+    <ImageViewEx autoSize="false" centered="false" focusTraversable="false" height="104" id="image" layoutX="212" layoutY="188" mosaic="false" mosaicGap="0" proportional="false" stretch="true" styleClass="" textFill="#000000" width="104">
+      <font>
+        <Font name="System Regular" size="12"/>
+      </font>
+    </ImageViewEx>
+    <Data cursor="DEFAULT" enabled="" id="data-image" image=".data/img/UeRKN.png" visible=""/>
+    <com.jfoenix.controls.JFXCheckBox alignment="CENTER_LEFT" checkedColor="#0f9d58" contentDisplay="LEFT" ellipsisString="..." focusTraversable="true" graphicTextGap="4" id="checkboxAlt" layoutX="8" layoutY="24" prefHeight="24" prefWidth="144" styleClass="check-box jfx-check-box " text="button icon" textAlignment="LEFT" textFill="#ffffff" unCheckedColor="#5a5a5a" underline="false" wrapText="false">
+      <font>
+        <Font name="System Regular" size="12"/>
+      </font>
+    </com.jfoenix.controls.JFXCheckBox>
+    <Data cursor="DEFAULT" enabled="1" id="data-checkboxAlt" visible="1"/>
+    <LabelEx alignment="CENTER" autoSize="false" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="label" layoutX="224" layoutY="80" prefHeight="17" prefWidth="80" styleClass="label " text="AntiRKN VPN" textAlignment="LEFT" textFill="#ffffff" underline="false" wrapText="false">
+      <font>
+        <Font name="System Regular" size="12"/>
+      </font>
+    </LabelEx>
+    <Data cursor="DEFAULT" enabled="1" id="data-label" visible="1"/>
+    <LabelEx alignment="CENTER_LEFT" autoSize="false" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="labelAlt" layoutX="216" layoutY="336" prefHeight="36" prefWidth="96" styleClass="label " text="Sweden" textAlignment="LEFT" textFill="#ffffff" underline="false" wrapText="false">
+      <font>
+        <Font name="System Bold" size="25"/>
+      </font>
+    </LabelEx>
+    <Data cursor="DEFAULT" enabled="1" id="data-labelAlt" visible="1"/>
+    <LabelEx alignment="CENTER_LEFT" autoSize="false" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="label3" layoutX="312" layoutY="347" prefHeight="17" prefWidth="16" styleClass="label " text="&gt;" textAlignment="LEFT" textFill="#ffffff" underline="false" wrapText="false">
+      <font>
+        <Font name="System Regular" size="12"/>
+      </font>
+    </LabelEx>
+    <Data cursor="DEFAULT" enabled="1" id="data-label3" visible="1"/>
+    <ImageViewEx autoSize="false" centered="false" focusTraversable="false" height="24" id="imageAlt" layoutX="189" layoutY="344" mosaic="false" mosaicGap="0" proportional="false" stretch="true" styleClass="" textFill="#000000" width="24">
+      <font>
+        <Font name="System Regular" size="12"/>
+      </font>
+    </ImageViewEx>
+    <Data cursor="DEFAULT" enabled="1" id="data-imageAlt" image=".data/img/se.png" visible="1"/>
+  </children>
+</AnchorPane>
