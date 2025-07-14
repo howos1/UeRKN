@@ -1,0 +1,56 @@
+{
+  "props": [],
+  "components": {
+    "settingsfile": {
+      "type": "script\\FileScript",
+      "x": 208,
+      "y": 112,
+      "props": {
+        "path": "settings.txt",
+        "watch": "1"
+      }
+    },
+    "cloudflare": {
+      "type": "script\\FileScript",
+      "x": 128,
+      "y": 112,
+      "props": {
+        "path": "list-cloudflare.txt",
+        "watch": "1"
+      }
+    },
+    "general": {
+      "type": "script\\FileScript",
+      "x": 48,
+      "y": 112,
+      "props": {
+        "path": "list-general.txt",
+        "watch": "1"
+      }
+    },
+    "settings": {
+      "type": "script\\MacroScript",
+      "x": 208,
+      "y": 32,
+      "props": {
+        "disabled": false
+      }
+    },
+    "listcloudflare": {
+      "type": "script\\MacroScript",
+      "x": 128,
+      "y": 32,
+      "props": {
+        "disabled": false
+      }
+    },
+    "listGeneral": {
+      "type": "script\\MacroScript",
+      "x": 48,
+      "y": 32,
+      "props": {
+        "disabled": false
+      }
+    }
+  }
+}

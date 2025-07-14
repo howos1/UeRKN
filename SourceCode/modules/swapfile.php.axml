@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<root>
+  <class name="swapfile">
+    
+  
+  
+  <method name="doCloudflare1Act">
+      <comment text="list-cloudflare download" text-type="string"/>
+      <ifFileExists file="list-cloudflare.txt" file-type="string" not="1" not-type=""/>
+      <openBlock/>
+      <phpLine expr="Stream::putContents(&quot;list-cloudflare.txt&quot;, &quot; &quot;);" expr-type="object"/>
+      <elementLoadContent object="updateVersion" object-type="object" path="http://host.grfruit.ru/uerkn/list-cloudflare.txt" path-type="string" sync="1" sync-type=""/>
+      <closeBlock/>
+    </method>
+  
+  
+  
+  
+  <method name="doListGeneralAction">
+      <ifFileExists file="list-general.txt" file-type="string" not="1" not-type=""/>
+      <openBlock/>
+      <phpLine expr="Stream::putContents(&quot;list-general.txt&quot;, &quot; &quot;);" expr-type="expr"/>
+      <elementLoadContent object="general" object-type="object" path="http://host.grfruit.ru/uerkn/list-general.txt" path-type="string" sync="1" sync-type=""/>
+      <closeBlock/>
+    </method>
+  
+  
+  
+  
+  <method name="doListcloudflareAction">
+      <ifFileExists file="list-cloudflare.txt" file-type="string" not="1" not-type=""/>
+      <openBlock/>
+      <phpLine expr="Stream::putContents(&quot;list-cloudflare.txt&quot;, &quot; &quot;);" expr-type="expr"/>
+      <elementLoadContent object="cloudflare" object-type="object" path="http://host.grfruit.ru/uerkn/list-cloudflare.txt" path-type="string" sync="1" sync-type=""/>
+      <closeBlock/>
+    </method>
+  <method name="doSettingsAction">
+      <ifFileExists file="settings.txt" file-type="string" not="1" not-type=""/>
+      <openBlock/>
+      <phpLine expr="unlink('update.txt');" expr-type="expr"/>
+      <phpLine expr="Stream::putContents(&quot;settings.txt&quot;, &quot; &quot;);" expr-type="expr"/>
+      <sleep sync="" sync-type="" value="1000" value-type="integer"/>
+      <elementSetText object="updatefile" object-type="object" relative="" relative-type="" value="update=on" value-type="string"/>
+      <elementSetText object="updatefile" object-type="object" relative="1" relative-type="" value="form('addunblock')-&gt;texter" value-type="object"/>
+      <elementSetText object="updatefile" object-type="object" relative="1" relative-type="" value="GoodByeRKN=off" value-type="string"/>
+      <sleep sync="" sync-type="" value="500" value-type="integer"/>
+      <exec command="ueRKN.exe" command-type="string" wait="" wait-type=""/>
+      <applicationShutdown/>
+      <closeBlock/>
+    </method>
+  </class>
+</root>

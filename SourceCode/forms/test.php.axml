@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<root>
+  <class name="test">
+    
+  
+  <method name="doRectClickLeft">
+      <displace continue="" continue-type="" duration="1000" duration-type="integer" object="~sender" object-type="object" x="15" x-type="float" y="0" y-type="float"/>
+      <sleep sync="" sync-type="" value="6000" value-type="integer"/>
+      <displace continue="" continue-type="" duration="1000" duration-type="integer" object="~sender" object-type="object" x="80" x-type="float" y="0" y-type="float"/>
+    </method>
+  
+  
+  
+  
+  
+  <method name="doButton5ClickLeft">
+      <displace continue="" continue-type="" duration="1000" duration-type="integer" object="rect" object-type="object" x="15" x-type="float" y="0" y-type="float"/>
+      <sleep sync="" sync-type="" value="6000" value-type="integer"/>
+      <displace continue="" continue-type="" duration="1000" duration-type="integer" object="rect" object-type="object" x="80" x-type="float" y="0" y-type="float"/>
+      <sleep sync="" sync-type="" value="4000" value-type="integer"/>
+      <displace continue="" continue-type="" duration="1000" duration-type="integer" object="rect" object-type="object" x="200" x-type="float" y="0" y-type="float"/>
+      <sleep sync="" sync-type="" value="3000" value-type="integer"/>
+      <displace continue="" continue-type="" duration="1000" duration-type="integer" object="rect" object-type="object" x="200" x-type="float" y="0" y-type="float"/>
+    </method>
+    
+  
+  <method name="doButton6ClickLeft">
+      <displace continue="" continue-type="" duration="1000" duration-type="integer" object="load2" object-type="object" x="15" x-type="float" y="0" y-type="float"/>
+      <sleep sync="" sync-type="" value="6000" value-type="integer"/>
+      <displace continue="" continue-type="" duration="1000" duration-type="integer" object="load2" object-type="object" x="80" x-type="float" y="0" y-type="float"/>
+      <sleep sync="" sync-type="" value="4000" value-type="integer"/>
+      <displace continue="" continue-type="" duration="1000" duration-type="integer" object="load2" object-type="object" x="200" x-type="float" y="0" y-type="float"/>
+      <sleep sync="" sync-type="" value="3000" value-type="integer"/>
+      <displace continue="" continue-type="" duration="1000" duration-type="integer" object="load2" object-type="object" x="200" x-type="float" y="0" y-type="float"/>
+      <sleep sync="" sync-type="" value="1000" value-type="integer"/>
+      <displace continue="" continue-type="" duration="1000" duration-type="integer" object="load2" object-type="object" x="200" x-type="float" y="0" y-type="float"/>
+    </method>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <method name="doButton2MouseEnter">
+      <elementSetWidth object="~sender" object-type="object" relative="1" relative-type="" value="10" value-type="integer"/>
+      <elementSetHeight object="~sender" object-type="object" relative="1" relative-type="" value="10" value-type="integer"/>
+    </method>
+  
+  <method name="doButton2MouseExit">
+      <elementSetWidth object="~sender" object-type="object" relative="1" relative-type="" value="-10" value-type="integer"/>
+      <elementSetHeight object="~sender" object-type="object" relative="1" relative-type="" value="-10" value-type="integer"/>
+    </method>
+  </class>
+</root>
